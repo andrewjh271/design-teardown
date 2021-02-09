@@ -75,7 +75,6 @@ p {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr 1fr;
   grid-gap: 20px;
-  height: 100vh;
 }
 
 .articles-main article {
@@ -120,7 +119,6 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1.5fr;
   grid-gap: 20px;
-  height: 120vh;
 }
 
 .guides article {
@@ -142,7 +140,6 @@ p {
 /* More Articles... */
 
 .featured-members {
-  height: 125vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
