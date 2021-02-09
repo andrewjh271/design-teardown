@@ -9,6 +9,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  color: white;
 }
 
 a {
@@ -22,8 +23,13 @@ a:hover {
 
 header {
   height: 12vh;
+  padding-left: 50px;
   background-color: black;
   opacity: 0.9;
+}
+
+header h3 {
+  line-height: 12vh;
 }
 
 section {
@@ -31,15 +37,43 @@ section {
 }
 
 article,
-aside {
+aside,
+footer,
+.design-systems-banner {
   background-color: black;
+  padding: 20px;
 }
+
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'Martel', serif;
+}
+
 
 /* Main Section */
 
 .articles-main {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
   grid-gap: 20px;
   height: 100vh;
 }
@@ -59,7 +93,6 @@ aside {
 .article-previews {
   display: grid;
   grid-gap: 20px;
-  height: 150vh;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -102,8 +135,8 @@ aside {
 
 .design-systems-banner {
   height: 40vh;
-  background-color: black;
   opacity: 0.95;
+  padding: 70px 33% 0 60px;
 }
 
 /* More Articles... */
@@ -127,6 +160,5 @@ aside {
 
 footer {
   height: 70vh;
-  background-color: black;
   opacity: 0.8;
 }
