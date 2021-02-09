@@ -1,0 +1,120 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: #0088ccd9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  height: 10vh;
+  background-color: lightcoral;
+}
+
+section {
+  margin: 50px;
+}
+
+/* Main Section */
+
+.articles-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+}
+
+.articles-main article {
+  border: 1px solid goldenrod;
+  background-color: lightcyan
+}
+
+.articles-main aside {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  background-color: lightgreen;
+}
+
+/* Article Preview Section */
+
+.article-previews {
+  display: grid;
+  height: 150vh;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.article-previews aside {
+  grid-column-start: span 2;
+  background-color: aqua;
+}
+
+.article-previews article {
+  border: 1px solid plum;
+}
+
+/* Full Page Advertisement */
+.full-page-ad {
+  height: 100vh;
+  background-color: midnightblue;
+  margin: 0;
+}
+
+/* Guide Preview Section */
+
+.guides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  height: 120vh;
+}
+
+.guides article {
+  border: 1px solid wheat;
+}
+
+.guides aside {
+  background-color: azure;
+}
+
+/* Random Banner */
+
+.design-systems-banner {
+  height: 40vh;
+  background-color: tomato;
+}
+
+/* More Articles... */
+
+.featured-members {
+  height: 125vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.featured-members :first-child {
+  grid-column-start: span 2;
+}
+
+.featured-members article {
+  border: 1px solid yellowgreen;
+}
+
+/* Footer */
+
+footer {
+  height: 70vh;
+  background-color: red;
+}
